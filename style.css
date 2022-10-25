@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    max-width: 315px;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box2 {
+    height: 60%;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+p {
+    font-family: montserrat, fraunces;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(167, 167, 167);
+    text-align: justify;
+}
+h1 {
+    font-family: fraunces;
+    font-weight: 700;
+}
+h4 {
+    color: rgb(167, 167, 167);
+    letter-spacing: 3px;
+    font-family: montserrat;
+}
+.price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: fraunces;
+    vertical-align: middle;
+}
+.full-price {
+    font-family: montserrat;
+    font-size: 14px;
+    text-decoration: line-through;
+    text-align: right;
+    vertical-align: middle;
+    color: rgb(167, 167, 167);  
+}
+button {
+    padding: 7px;
+    border: transparent;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    margin: 0 auto;
+    color: white;
+    font-family: montserrat;
+    font-weight: 600;
+    width: 85%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+p, h1, h4, .price {
+    padding: 7px 25px;
+}
+.container button::before {
+    content: url('images/icon-cart.svg');
+    margin-right: 5px;
+}
+@media only screen and (min-width: 376px) {
+    .container {
+        height: 450px;
+        max-width: 550px;
+        display: flex;
+        flex-direction: row;
+    }
+    .picture {
+        height: 100%;
+        width: 250px;
+        overflow: hidden;
+
+    }
+    .box2 {
+        height: 100%;
+        width: 300px;
+    }
+    button {
+        margin-top: 6%;
+    }
+    p, h1, h4, .price {
+    padding: 15px 30px 15px 30px;
+    }
+    .full-price {
+    padding: 0;
+    }
+    button {
+        width: 80%;
+    }
+    h4 {
+        margin-top: 7px;
+    }
+}
