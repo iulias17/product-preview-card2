@@ -79,7 +79,7 @@ button {
 }
 p, h1, h4, .price {
     padding: 7px 25px;
-}\index.html
+}
 .container button::before {
     content: url('images/icon-cart.svg');
     margin-right: 5px;
@@ -94,7 +94,7 @@ p, h1, h4, .price {
     .picture {
         height: 450px;
         max-width: 286px;
-        overflow: visible;
+        overflow: hidden;
     }
     .box2 {
         height: 450px;
